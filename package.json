@@ -1,0 +1,30 @@
+{
+  "name": "fracturepedia",
+  "version": "1.0.0",
+  "description": "AI-powered Fracture Reference powered by Gemini",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "build:android": "react-native build-android",
+    "build:ios": "react-native build-ios",
+    "build:web": "webpack --mode production",
+    "install-pwa": "npm install && npm run build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "^0.72.0",
+    "axios": "^1.4.0",
+    "@react-native-async-storage/async-storage": "^1.18.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0",
+    "@babel/core": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "babel-loader": "^9.1.0",
+    "@react-native-community/cli": "^11.0.0"
+  }
+}
